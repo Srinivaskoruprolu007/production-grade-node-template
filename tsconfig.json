@@ -1,56 +1,33 @@
 {
-    // Visit https://aka.ms/tsconfig to read more about this file
-    "compilerOptions": {
-        // File Layout
-        "rootDir": "./src",
-        "outDir": "./dist",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
 
-        // Environment Settings
-        // See also https://aka.ms/tsconfig/module
-        "module": "commonjs",
-        "target": "es2016",
-        "types": [],
-        // For nodejs:
-        // "lib": ["esnext"],
-        // "types": ["node"],
-        // and npm install -D @types/node
+    "module": "commonjs",
+    "target": "es2016",
+    "types": [],
 
-        "removeComments": true,
-        // Other Outputs
-        // "sourceMap": true,
-        // "declaration": true,
-        // "declarationMap": true,
+    "removeComments": true,
 
-        // Stricter Typechecking Options
-        "noUncheckedIndexedAccess": true,
-        "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
 
-        // Style Options
-        // "noImplicitReturns": true,
-        // "noImplicitOverride": true,
-        // "noUnusedLocals": true,
-        // "noUnusedParameters": true,
-        // "noFallthroughCasesInSwitch": true,
-        // "noPropertyAccessFromIndexSignature": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strict": true,
+    "alwaysStrict": true,
 
-        // Recommended Options
-
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "strictFunctionTypes": true,
-        "strictPropertyInitialization": true,
-        "strict": true,
-        "alwaysStrict": true,
-
-        "noImplicitReturns": true,
-        "noUnusedLocals": true,
-        // "jsx": "react-jsx",
-        "verbatimModuleSyntax": true,
-        "isolatedModules": true,
-        "noUncheckedSideEffectImports": true,
-        "moduleDetection": "force",
-        "skipLibCheck": true
-    }
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
 }
