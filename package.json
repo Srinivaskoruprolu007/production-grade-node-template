@@ -4,10 +4,16 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node index.js"
+        "test": "node test.js",
+        "dev": "node index.js",
+        "prepare": "husky"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "type": "commonjs"
+    "type": "commonjs",
+    "devDependencies": {
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.7"
+    }
 }
