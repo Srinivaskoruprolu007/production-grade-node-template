@@ -9,7 +9,8 @@
     "start": "node dist/server.js",
     "prepare": "husky",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix"
+    "lint:fix": "eslint . --ext .ts --fix",
+    "commitlint": "commitlint --edit"
   },
   "lint-staged": {
     "*.ts": [
